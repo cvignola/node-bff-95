@@ -1,0 +1,13 @@
+---
+applications:
+- disk_quota: 1024M
+  name: nodebff95
+  domain: stage1.mybluemix.net
+  host: cpvnode95
+  memory: 256M
+  instances: 1
+  timeout: 180
+  buildpack: sdk-for-nodejs
+  command: npm start
+  env:
+    OPENAPI_SPEC: /swagger/api
